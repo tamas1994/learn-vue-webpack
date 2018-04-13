@@ -13,8 +13,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
+          'style-loader',
           'vue-style-loader',
-          'css-loader'
+          'css-loader',
+          "postcss-loader"
         ],
       },      {
         test: /\.vue$/,
@@ -31,7 +33,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
