@@ -4,6 +4,7 @@ import Index from '../pages/Index';
 import ElementContainer from '../pages/ElementContainer.vue';
 import ElementButton from '../pages/ElementButton.vue';
 import ElementRadio from '../pages/ElementRadio.vue';
+import LifeCycle from '../pages/LifeCycle.vue';
 
 
 Vue.use(Router);
@@ -29,6 +30,11 @@ export default new Router({
       path: '/element-radio',
       name: 'element-radio',
       component: ElementRadio
+    },
+    {
+      path: '/life-cycle',
+      name: 'life-cycle',
+      component: LifeCycle
     }
   ]
 });
