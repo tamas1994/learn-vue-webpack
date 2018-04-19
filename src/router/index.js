@@ -5,6 +5,7 @@ import ElementContainer from '../pages/ElementContainer.vue';
 import ElementButton from '../pages/ElementButton.vue';
 import ElementRadio from '../pages/ElementRadio.vue';
 import LifeCycle from '../pages/LifeCycle.vue';
+import Axios from '../pages/Axios.vue';
 
 
 Vue.use(Router);
@@ -35,6 +36,11 @@ export default new Router({
       path: '/life-cycle',
       name: 'life-cycle',
       component: LifeCycle
+    },
+    {
+      path: '/axios',
+      name: 'axios',
+      component: Axios
     }
   ]
 });
