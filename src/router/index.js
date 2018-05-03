@@ -7,6 +7,8 @@ import ElementRadio from '../pages/ElementRadio.vue';
 import LifeCycle from '../pages/LifeCycle.vue';
 import Axios from '../pages/Axios.vue';
 
+import RouterParamTo from '../pages/RouterParamTo.vue';
+
 
 Vue.use(Router);
 
@@ -41,6 +43,11 @@ export default new Router({
       path: '/axios',
       name: 'axios',
       component: Axios
+    },
+    {
+      path: '/router-param-to/:param1',
+      name: 'router-param-to',
+      component: RouterParamTo
     }
   ]
 });
