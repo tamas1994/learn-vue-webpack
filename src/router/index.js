@@ -6,6 +6,7 @@ import ElementButton from '../pages/ElementButton.vue';
 import ElementRadio from '../pages/ElementRadio.vue';
 import LifeCycle from '../pages/LifeCycle.vue';
 import Axios from '../pages/Axios.vue';
+import Result from '../pages/Result.vue';
 
 import RouterParamTo from '../pages/RouterParamTo.vue';
 import Loan from '../pages/Loan.vue';
@@ -54,6 +55,11 @@ export default new Router({
       path: '/loan',
       name: 'loan',
       component: Loan
+    },
+    {
+      path: '/result',
+      name: 'result',
+      component: Result
     }
   ]
 });
