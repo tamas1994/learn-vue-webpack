@@ -10,6 +10,7 @@ import Result from '../pages/Result.vue';
 
 import RouterParamTo from '../pages/RouterParamTo.vue';
 import Loan from '../pages/Loan.vue';
+import Manage from '../pages/Manage.vue'
 
 
 Vue.use(Router);
@@ -18,8 +19,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'index',
-      component: Index
+      name: 'loan',
+      component: Loan
     },
     {
       path: '/element-container',
@@ -52,14 +53,14 @@ export default new Router({
       component: RouterParamTo
     },
     {
-      path: '/loan',
-      name: 'loan',
-      component: Loan
-    },
-    {
       path: '/result',
       name: 'result',
       component: Result
+    },
+    {
+      path: '/manage',
+      name: 'manage',
+      component: Manage
     }
   ]
 });

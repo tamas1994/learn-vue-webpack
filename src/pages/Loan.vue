@@ -48,7 +48,7 @@
       },
       addClient()  {
         console.log("准备发送post请求啦");
-        axios.post('http://localhost:9999/client/single',this.form)
+        axios.post('http://39.105.49.185:8080/loan/client/single',this.form)
           .then(response => {
             console.log(response.data);
             if (response.data.status==1){
@@ -62,7 +62,12 @@
           .catch(error => {
             console.log(error);
           });
-      }
+      },
+
+    },
+    beforeCreate: function () {
+      console.group('mounted 挂载结束状态===============》');
+      document.title='填写个人信息';
     }
   }
 </script>
