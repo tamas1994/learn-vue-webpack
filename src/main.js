@@ -3,17 +3,24 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 
-
-import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
+import { Button, Dialog, Form, FormItem, Input, Checkbox, Alert} from 'element-ui';
+
+Vue.use(Button);
+Vue.use(Dialog);
+Vue.use(Form);
+Vue.use(FormItem);
+Vue.use(Input);
+Vue.use(Checkbox);
+Vue.use(Alert);
 
 
 Vue.prototype.$http = axios;
 
-Vue.use(ElementUI)
 new Vue({
   el: '#app',
   router,
   template: '<App/>',
   components: {App}
 })
+
